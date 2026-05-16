@@ -1,0 +1,22 @@
+# Streamlit secrets — never commit
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Exports
+tss-financial-model-export.xlsx
+tss-export-*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/

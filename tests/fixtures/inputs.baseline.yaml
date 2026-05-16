@@ -1,0 +1,743 @@
+horizon_months: 36
+scenarios:
+- conservative
+- standard
+- optimistic
+revenue_streams:
+- name: Business Ops AI Agent
+  business_model: Tier-Based Subscription + Per Seat +  Pay-as-you-go
+  new_clients_per_month:
+    conservative:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 4.0
+    - 5.0
+    - 8.0
+    - 10.0
+    - 13.0
+    - 14.0
+    - 18.0
+    - 20.0
+    - 24.0
+    - 29.0
+    - 33.0
+    - 36.0
+    - 40.0
+    - 43.0
+    - 46.0
+    - 48.0
+    - 50.0
+    - 52.0
+    - 54.0
+    - 58.0
+    - 63.0
+    - 68.0
+    - 77.0
+    - 84.0
+    - 95.0
+    - 108.0
+    - 126.0
+    - 151.0
+    - 188.0
+    - 202.0
+    - 223.0
+    - 255.0
+    standard:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 5.0
+    - 8.0
+    - 11.0
+    - 15.0
+    - 20.0
+    - 21.0
+    - 26.0
+    - 29.0
+    - 37.0
+    - 46.0
+    - 53.0
+    - 58.0
+    - 63.0
+    - 68.0
+    - 73.0
+    - 76.0
+    - 79.0
+    - 82.0
+    - 86.0
+    - 88.0
+    - 90.0
+    - 93.0
+    - 102.0
+    - 112.0
+    - 123.0
+    - 138.0
+    - 176.0
+    - 202.0
+    - 254.0
+    - 268.0
+    - 301.0
+    - 338.0
+    optimistic:
+    - 1.0
+    - 1.0
+    - 1.0
+    - 1.0
+    - 6.0
+    - 7.0
+    - 11.0
+    - 15.0
+    - 20.0
+    - 21.0
+    - 27.0
+    - 31.0
+    - 31.0
+    - 38.0
+    - 43.0
+    - 47.0
+    - 51.0
+    - 55.0
+    - 59.0
+    - 62.0
+    - 65.0
+    - 68.0
+    - 70.0
+    - 82.0
+    - 92.0
+    - 106.0
+    - 117.0
+    - 134.0
+    - 145.0
+    - 167.0
+    - 197.0
+    - 232.0
+    - 290.0
+    - 318.0
+    - 346.0
+    - 416.0
+  churn_monthly: 0.1
+  tier_split:
+    conservative:
+      basic: 0.85
+      pro: 0.15
+    standard:
+      basic: 0.8
+      pro: 0.2
+    optimistic:
+      basic: 0.7
+      pro: 0.3
+  pricing:
+    subscription:
+      basic:
+        conservative: 97.0
+        standard: 97.0
+        optimistic: 97.0
+      pro:
+        conservative: 200.0
+        standard: 250.0
+        optimistic: 300.0
+    seats:
+      per_client:
+        basic:
+          conservative: 1.0
+          standard: 3.0
+          optimistic: 5.0
+        pro:
+          conservative: 1.0
+          standard: 3.0
+          optimistic: 5.0
+      price:
+        basic:
+          conservative: 5.0
+          standard: 6.0
+          optimistic: 7.0
+        pro:
+          conservative: 4.0
+          standard: 4.0
+          optimistic: 4.0
+    credits:
+      per_client_monthly:
+        basic:
+          conservative: 0.0
+          standard: 100.0
+          optimistic: 150.0
+        pro:
+          conservative: 50.0
+          standard: 250.0
+          optimistic: 450.0
+      price:
+        basic:
+          conservative: 0.2
+          standard: 0.2
+          optimistic: 0.2
+        pro:
+          conservative: 0.2
+          standard: 0.2
+          optimistic: 0.2
+  invoice_fulfillment_pct: 0.95
+  collection_lag_months: 1
+payment_lag_months: 1
+cost_streams:
+- name: Cost Stream 1 - Internal Databases
+  kind: step
+  schedule:
+  - months:
+    - 1
+    - 9
+    monthly: 500.0
+  - months:
+    - 10
+    - 15
+    monthly: 1000.0
+  - months:
+    - 16
+    - 24
+    monthly: 2000.0
+  - months:
+    - 25
+    - 36
+    monthly: 3000.0
+- name: Cost Stream 2 - Hosting Clients Websites
+  kind: per_active_client
+  per_active_client_by_year:
+  - 5.0
+  - 5.0
+  - 5.0
+- name: Cost Stream 3 - API Calls - OpenAI
+  kind: per_credit
+  per_credit_by_year:
+  - 0.03
+  - 0.04
+  - 0.04
+salaries:
+  fringe_benefits_pct: 0.11
+  payment_periodicity_months: 1
+  roles:
+  - name: 'Management: Co-Founders'
+    base_monthly: 6500.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - name: 'Management: C-Level'
+    base_monthly: 4167.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - name: 'Management: High-Level Associates'
+    base_monthly: 212.0
+    headcount_by_month:
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - name: 'Associates: Legal Support'
+    base_monthly: 0.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - name: 'Associates: Finance & Accounting'
+    base_monthly: 0.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - name: 'Associates: HR & People'
+    base_monthly: 0.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  - name: 'Associates: Tech'
+    base_monthly: 8300.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 2
+    - 2
+    - 2
+    - 2
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - name: 'Associates: Marketing'
+    base_monthly: 5000.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 2
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+  - name: 'Associates: Operations'
+    base_monthly: 4000.0
+    headcount_by_month:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+opex:
+- name: Travel Expenses
+  schedule:
+  - months:
+    - 1
+    - 2
+    monthly: 2250.0
+  - months:
+    - 3
+    - 7
+    monthly: 0.0
+  - months:
+    - 8
+    - 17
+    monthly: 500.0
+  - months:
+    - 18
+    - 36
+    monthly: 1000.0
+- name: Office Space Expenses
+  schedule:
+  - months:
+    - 1
+    - 12
+    monthly: 0.0
+  - months:
+    - 13
+    - 24
+    monthly: 1000.0
+  - months:
+    - 25
+    - 36
+    monthly: 2000.0
+- name: Office Supplies Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0.0
+  - months:
+    - 7
+    - 17
+    monthly: 400.0
+  - months:
+    - 18
+    - 36
+    monthly: 650.0
+- name: Tech Licenses Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 500.0
+  - months:
+    - 7
+    - 25
+    monthly: 1000.0
+  - months:
+    - 26
+    - 36
+    monthly: 2500.0
+- name: Banking Expenses
+  schedule:
+  - months:
+    - 1
+    - 7
+    monthly: 0.0
+  - months:
+    - 8
+    - 36
+    monthly: 100.0
+- name: Advisory Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0.0
+  - months:
+    - 7
+    - 24
+    monthly: 500.0
+  - months:
+    - 25
+    - 36
+    monthly: 1000.0
+- name: Marketing Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0.0
+  - months:
+    - 7
+    - 12
+    monthly: 1000.0
+  - months:
+    - 13
+    - 13
+    monthly: 2500.0
+  - months:
+    - 14
+    - 25
+    monthly: 3500.0
+  - months:
+    - 26
+    - 29
+    monthly: 7000.0
+  - months:
+    - 30
+    - 36
+    monthly: 15000.0
+- name: Customer Support Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0.0
+  - months:
+    - 7
+    - 12
+    monthly: 500.0
+  - months:
+    - 13
+    - 24
+    monthly: 1000.0
+  - months:
+    - 25
+    - 36
+    monthly: 3000.0
+- name: Unforeseen/Miscellaneous Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 250.0
+  - months:
+    - 7
+    - 17
+    monthly: 1000.0
+  - months:
+    - 18
+    - 24
+    monthly: 1500.0
+  - months:
+    - 25
+    - 36
+    monthly: 3000.0
+capex: []
+tech_investments:
+- name: 'Tech Investment #1'
+  value: 300000.0
+  amortization_months: 12
+  acquisition_month: 24
+debt: []
+equity_raises:
+- name: 'Fundraise #1'
+  amount: 220000.0
+  closing_month: 3
+- name: 'Fundraise #2'
+  amount: 750000.0
+  closing_month: 23
+grants: []
+other_income:
+  schedule:
+  - months:
+    - 1
+    - 1
+    monthly: 15000.0
+  - months:
+    - 2
+    - 36
+    monthly: 0.0
+tax:
+  effective_rate: 0.21

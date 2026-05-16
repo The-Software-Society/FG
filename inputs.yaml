@@ -1,0 +1,1425 @@
+horizon_months: 36
+scenarios:
+- conservative
+- standard
+- optimistic
+revenue_streams:
+- name: Upwork (Build + 24mo Bundle)
+  business_model: 'Prepaid 2-year bundle: $790 covers build, software access, hosting'
+  pricing_kind: one_time_bundle
+  bundle_term_months: 24
+  bundle_price:
+    conservative: 790
+    standard: 790
+    optimistic: 790
+  new_clients_per_month:
+    conservative:
+    - 2.0
+    - 2.09
+    - 2.17
+    - 2.26
+    - 2.34
+    - 2.43
+    - 2.51
+    - 2.6
+    - 2.69
+    - 2.77
+    - 2.86
+    - 2.94
+    - 3.03
+    - 3.11
+    - 3.2
+    - 3.29
+    - 3.37
+    - 3.46
+    - 3.54
+    - 3.63
+    - 3.71
+    - 3.8
+    - 3.89
+    - 3.97
+    - 4.06
+    - 4.14
+    - 4.23
+    - 4.31
+    - 4.4
+    - 4.49
+    - 4.57
+    - 4.66
+    - 4.74
+    - 4.83
+    - 4.91
+    - 5.0
+    standard:
+    - 3.0
+    - 3.1
+    - 3.2
+    - 3.3
+    - 3.4
+    - 3.5
+    - 3.6
+    - 3.7
+    - 3.8
+    - 3.9
+    - 4.0
+    - 4.1
+    - 4.2
+    - 4.3
+    - 4.4
+    - 4.5
+    - 4.6
+    - 4.7
+    - 4.8
+    - 4.9
+    - 5.0
+    - 5.1
+    - 5.2
+    - 5.3
+    - 5.4
+    - 5.5
+    - 5.6
+    - 5.7
+    - 5.8
+    - 5.9
+    - 6.0
+    - 6.1
+    - 6.2
+    - 6.3
+    - 6.4
+    - 6.5
+    optimistic:
+    - 4.0
+    - 4.17
+    - 4.34
+    - 4.51
+    - 4.69
+    - 4.86
+    - 5.03
+    - 5.2
+    - 5.37
+    - 5.54
+    - 5.71
+    - 5.89
+    - 6.06
+    - 6.23
+    - 6.4
+    - 6.57
+    - 6.74
+    - 6.91
+    - 7.09
+    - 7.26
+    - 7.43
+    - 7.6
+    - 7.77
+    - 7.94
+    - 8.11
+    - 8.29
+    - 8.46
+    - 8.63
+    - 8.8
+    - 8.97
+    - 9.14
+    - 9.31
+    - 9.49
+    - 9.66
+    - 9.83
+    - 10.0
+  churn_monthly: 0.02
+  tier_split:
+    conservative:
+      basic: 1.0
+      pro: 0.0
+    standard:
+      basic: 1.0
+      pro: 0.0
+    optimistic:
+      basic: 1.0
+      pro: 0.0
+  pricing:
+    subscription:
+      basic:
+        conservative: 0
+        standard: 0
+        optimistic: 0
+      pro:
+        conservative: 0
+        standard: 0
+        optimistic: 0
+    seats:
+      per_client:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+      price:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+    credits:
+      per_client_monthly:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+      price:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+  invoice_fulfillment_pct: 1.0
+  collection_lag_months: 0
+- name: Cold Call ($50/mo)
+  business_model: Direct-to-business outbound; phased out at M12 in favor of Ads
+  pricing_kind: monthly_subscription
+  active_after_month: 4
+  inactive_after_month: 12
+  new_clients_per_month:
+    conservative:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    standard:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    optimistic:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  customers_per_salesperson_per_month:
+    conservative: 3
+    standard: 8
+    optimistic: 12
+  churn_monthly: 0.1
+  tier_split:
+    conservative:
+      basic: 1.0
+      pro: 0.0
+    standard:
+      basic: 1.0
+      pro: 0.0
+    optimistic:
+      basic: 1.0
+      pro: 0.0
+  pricing:
+    subscription:
+      basic:
+        conservative: 50
+        standard: 50
+        optimistic: 50
+      pro:
+        conservative: 0
+        standard: 0
+        optimistic: 0
+    seats:
+      per_client:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+      price:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+    credits:
+      per_client_monthly:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+      price:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+  invoice_fulfillment_pct: 0.95
+  collection_lag_months: 1
+- name: Ads ($97/mo)
+  business_model: Paid funnel; succeeds Cold Call as the primary direct-acquisition channel
+  pricing_kind: monthly_subscription
+  active_after_month: 13
+  new_clients_per_month:
+    conservative:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    standard:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    optimistic:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  customers_per_salesperson_per_month:
+    conservative: 5
+    standard: 12
+    optimistic: 20
+  churn_monthly: 0.06
+  tier_split:
+    conservative:
+      basic: 1.0
+      pro: 0.0
+    standard:
+      basic: 1.0
+      pro: 0.0
+    optimistic:
+      basic: 1.0
+      pro: 0.0
+  pricing:
+    subscription:
+      basic:
+        conservative: 97
+        standard: 97
+        optimistic: 97
+      pro:
+        conservative: 0
+        standard: 0
+        optimistic: 0
+    seats:
+      per_client:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+      price:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+    credits:
+      per_client_monthly:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+      price:
+        basic:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+        pro:
+          conservative: 0
+          standard: 0
+          optimistic: 0
+  invoice_fulfillment_pct: 0.95
+  collection_lag_months: 1
+payment_lag_months: 1
+cost_streams:
+- name: Internal Databases
+  kind: step
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0
+  - months:
+    - 7
+    - 9
+    monthly: 500
+  - months:
+    - 10
+    - 15
+    monthly: 1000
+  - months:
+    - 16
+    - 24
+    monthly: 2000
+  - months:
+    - 25
+    - 36
+    monthly: 3000
+- name: Hosting Clients Websites
+  kind: per_active_client
+  per_active_client_by_year:
+  - 5
+  - 5
+  - 5
+- name: API Calls - OpenAI (30% of Token Usage)
+  kind: fraction_of_addon
+  addon_name: Token Usage
+  fraction_schedule:
+  - months:
+    - 1
+    - 12
+    monthly: 0.3
+  - months:
+    - 13
+    - 24
+    monthly: 0.15
+  - months:
+    - 25
+    - 36
+    monthly: 0.08
+salaries:
+  fringe_benefits_pct: 0.11
+  payment_periodicity_months: 1
+  roles:
+  - name: Dulce (Co-founder)
+    base_monthly: 0
+    headcount_by_mode:
+      with_investment:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      no_investment:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    base_monthly_schedule_by_mode:
+      with_investment:
+      - months:
+        - 1
+        - 6
+        monthly: 500
+      - months:
+        - 7
+        - 12
+        monthly: 1000
+      - months:
+        - 13
+        - 18
+        monthly: 1500
+      - months:
+        - 19
+        - 24
+        monthly: 2000
+      - months:
+        - 25
+        - 30
+        monthly: 5400
+      - months:
+        - 31
+        - 36
+        monthly: 8300
+    pay_triggers_by_mode:
+      no_investment:
+      - monthly_amount: 500
+        earliest_month: 1
+      - monthly_amount: 1000
+        earliest_month: 1
+        monthly_revenue_at_least: 10000
+      - monthly_amount: 1500
+        earliest_month: 1
+        monthly_revenue_at_least: 20000
+      - monthly_amount: 2000
+        earliest_month: 1
+        monthly_revenue_at_least: 35000
+      - monthly_amount: 3500
+        earliest_month: 1
+        monthly_revenue_at_least: 60000
+      - monthly_amount: 5400
+        earliest_month: 1
+        monthly_revenue_at_least: 90000
+      - monthly_amount: 8300
+        earliest_month: 1
+        monthly_revenue_at_least: 150000
+  - name: Jon (Co-founder)
+    base_monthly: 0
+    headcount_by_mode:
+      with_investment:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      no_investment:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    base_monthly_schedule_by_mode:
+      with_investment:
+      - months:
+        - 1
+        - 18
+        monthly: 0
+      - months:
+        - 19
+        - 24
+        monthly: 2000
+      - months:
+        - 25
+        - 30
+        monthly: 5400
+      - months:
+        - 31
+        - 36
+        monthly: 8300
+    pay_triggers_by_mode:
+      no_investment:
+      - monthly_amount: 0
+        earliest_month: 1
+      - monthly_amount: 1500
+        earliest_month: 1
+        monthly_revenue_at_least: 30000
+      - monthly_amount: 2500
+        earliest_month: 1
+        monthly_revenue_at_least: 60000
+      - monthly_amount: 3500
+        earliest_month: 1
+        monthly_revenue_at_least: 90000
+      - monthly_amount: 5400
+        earliest_month: 1
+        monthly_revenue_at_least: 150000
+  - name: Stephen (Co-founder)
+    base_monthly: 0
+    hire_trigger_by_mode:
+      no_investment:
+        monthly_revenue_at_least: 80000
+        earliest_month: 13
+        headcount: 1
+      with_investment:
+        monthly_revenue_at_least: 50000
+        earliest_month: 18
+        headcount: 1
+    base_monthly_schedule_by_mode:
+      with_investment:
+      - months:
+        - 1
+        - 24
+        monthly: 0
+      - months:
+        - 25
+        - 30
+        monthly: 5400
+      - months:
+        - 31
+        - 36
+        monthly: 8300
+    pay_triggers_by_mode:
+      no_investment:
+      - monthly_amount: 0
+        earliest_month: 1
+      - monthly_amount: 5400
+        earliest_month: 1
+        monthly_revenue_at_least: 30000
+  - name: 'Sales #1'
+    base_monthly: 8333
+    hire_trigger_by_mode:
+      no_investment:
+        monthly_revenue_at_least: 20000
+        earliest_month: 1
+        headcount: 1
+      with_investment:
+        monthly_revenue_at_least: 5000
+        earliest_month: 3
+        headcount: 1
+  - name: 'Sales #2'
+    base_monthly: 8333
+    hire_trigger_by_mode:
+      no_investment:
+        monthly_revenue_at_least: 60000
+        earliest_month: 1
+        headcount: 1
+      with_investment:
+        monthly_revenue_at_least: 12000
+        earliest_month: 6
+        headcount: 1
+  - name: 'Customer Support #1'
+    base_monthly: 4500
+    hire_trigger_by_mode:
+      no_investment:
+        monthly_revenue_at_least: 60000
+        earliest_month: 1
+        headcount: 1
+      with_investment:
+        monthly_revenue_at_least: 20000
+        earliest_month: 9
+        headcount: 1
+  - name: 'Tech #1'
+    base_monthly: 8300
+    hire_trigger_by_mode:
+      no_investment:
+        monthly_revenue_at_least: 100000
+        sales_headcount_at_least: 2
+        support_headcount_at_least: 1
+        earliest_month: 1
+        headcount: 1
+      with_investment:
+        monthly_revenue_at_least: 30000
+        sales_headcount_at_least: 2
+        support_headcount_at_least: 1
+        earliest_month: 11
+        headcount: 1
+  - name: 'Sales #3'
+    base_monthly: 8333
+    hire_trigger_by_mode:
+      no_investment:
+        monthly_revenue_at_least: 120000
+        earliest_month: 1
+        headcount: 1
+      with_investment:
+        monthly_revenue_at_least: 40000
+        earliest_month: 12
+        headcount: 1
+  - name: 'Sales #4'
+    base_monthly: 8333
+    headcount_by_mode:
+      no_investment:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    hire_trigger_by_mode:
+      with_investment:
+        monthly_revenue_at_least: 60000
+        earliest_month: 15
+        headcount: 1
+  - name: 'Sales #5'
+    base_monthly: 8333
+    headcount_by_mode:
+      no_investment:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    hire_trigger_by_mode:
+      with_investment:
+        monthly_revenue_at_least: 80000
+        earliest_month: 18
+        headcount: 1
+  - name: 'Customer Support #2'
+    base_monthly: 4500
+    headcount_by_mode:
+      no_investment:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    hire_trigger_by_mode:
+      with_investment:
+        monthly_revenue_at_least: 100000
+        earliest_month: 20
+        headcount: 1
+  - name: 'Tech #2'
+    base_monthly: 8300
+    headcount_by_mode:
+      no_investment:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    hire_trigger_by_mode:
+      with_investment:
+        monthly_revenue_at_least: 120000
+        sales_headcount_at_least: 3
+        support_headcount_at_least: 2
+        earliest_month: 24
+        headcount: 1
+opex:
+- name: Travel Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0
+  - months:
+    - 7
+    - 17
+    monthly: 250
+  - months:
+    - 18
+    - 36
+    monthly: 500
+- name: Office Space Expenses
+  schedule:
+  - months:
+    - 1
+    - 36
+    monthly: 0
+- name: Office Supplies Expenses
+  schedule:
+  - months:
+    - 1
+    - 36
+    monthly: 0
+- name: Tech Licenses Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0
+  - months:
+    - 7
+    - 25
+    monthly: 1000.0
+  - months:
+    - 26
+    - 36
+    monthly: 2500.0
+- name: Banking Expenses
+  schedule:
+  - months:
+    - 1
+    - 7
+    monthly: 0.0
+  - months:
+    - 8
+    - 36
+    monthly: 100.0
+- name: Advisory Expenses
+  schedule:
+  - months:
+    - 1
+    - 12
+    monthly: 0
+  - months:
+    - 13
+    - 24
+    monthly: 250
+  - months:
+    - 25
+    - 36
+    monthly: 500
+- name: Marketing (baseline)
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 100
+  - months:
+    - 7
+    - 12
+    monthly: 500
+  - months:
+    - 13
+    - 24
+    monthly: 1000
+  - months:
+    - 25
+    - 36
+    monthly: 2000
+  schedule_by_scenario:
+    conservative:
+    - months:
+      - 1
+      - 6
+      monthly: 50
+    - months:
+      - 7
+      - 12
+      monthly: 200
+    - months:
+      - 13
+      - 24
+      monthly: 500
+    - months:
+      - 25
+      - 36
+      monthly: 1000
+    standard:
+    - months:
+      - 1
+      - 6
+      monthly: 100
+    - months:
+      - 7
+      - 12
+      monthly: 500
+    - months:
+      - 13
+      - 24
+      monthly: 1000
+    - months:
+      - 25
+      - 36
+      monthly: 2000
+    optimistic:
+    - months:
+      - 1
+      - 6
+      monthly: 500
+    - months:
+      - 7
+      - 12
+      monthly: 1500
+    - months:
+      - 13
+      - 24
+      monthly: 2500
+    - months:
+      - 25
+      - 36
+      monthly: 4000
+- name: Marketing (Investment-funded)
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0
+  - months:
+    - 7
+    - 12
+    monthly: 4000
+  - months:
+    - 13
+    - 18
+    monthly: 10000
+  - months:
+    - 19
+    - 24
+    monthly: 18000
+  - months:
+    - 25
+    - 30
+    monthly: 25000
+  - months:
+    - 31
+    - 36
+    monthly: 30000
+  enabled_in_modes:
+  - with_investment
+  schedule_by_scenario:
+    conservative:
+    - months:
+      - 1
+      - 6
+      monthly: 0
+    - months:
+      - 7
+      - 12
+      monthly: 1000
+    - months:
+      - 13
+      - 18
+      monthly: 2500
+    - months:
+      - 19
+      - 24
+      monthly: 4000
+    - months:
+      - 25
+      - 36
+      monthly: 5000
+    standard:
+    - months:
+      - 1
+      - 6
+      monthly: 0
+    - months:
+      - 7
+      - 12
+      monthly: 4000
+    - months:
+      - 13
+      - 18
+      monthly: 10000
+    - months:
+      - 19
+      - 24
+      monthly: 18000
+    - months:
+      - 25
+      - 30
+      monthly: 22000
+    - months:
+      - 31
+      - 36
+      monthly: 25000
+    optimistic:
+    - months:
+      - 1
+      - 6
+      monthly: 0
+    - months:
+      - 7
+      - 12
+      monthly: 8000
+    - months:
+      - 13
+      - 18
+      monthly: 20000
+    - months:
+      - 19
+      - 24
+      monthly: 35000
+    - months:
+      - 25
+      - 36
+      monthly: 50000
+- name: Customer Support Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 0
+  - months:
+    - 7
+    - 12
+    monthly: 250
+  - months:
+    - 13
+    - 24
+    monthly: 750
+  - months:
+    - 25
+    - 36
+    monthly: 1500
+- name: Unforeseen/Miscellaneous Expenses
+  schedule:
+  - months:
+    - 1
+    - 6
+    monthly: 200
+  - months:
+    - 7
+    - 17
+    monthly: 500
+  - months:
+    - 18
+    - 24
+    monthly: 1000
+  - months:
+    - 25
+    - 36
+    monthly: 1500
+capex: []
+tech_investments: []
+debt: []
+equity_raises:
+- name: Fundraise (Seed)
+  amount: 700000
+  closing_month: 6
+  enabled_in_modes:
+  - with_investment
+grants: []
+other_income:
+  schedule:
+  - months:
+    - 1
+    - 36
+    monthly: 0
+tax:
+  effective_rate: 0.21
+modes:
+- with_investment
+- no_investment
+add_ons:
+- name: Platform Access
+  arpu_schedule:
+  - months:
+    - 1
+    - 36
+    monthly: 100
+  applies_to: all
+- name: Token Usage
+  arpu_schedule:
+  - months:
+    - 1
+    - 3
+    monthly: 0
+  - months:
+    - 4
+    - 9
+    monthly: 50
+  - months:
+    - 10
+    - 18
+    monthly: 150
+  - months:
+    - 19
+    - 36
+    monthly: 300
+  applies_to: all
