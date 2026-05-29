@@ -837,21 +837,91 @@ salaries:
         monthly_revenue_at_least: 150000
   - name: Stephen (Co-founder)
     base_monthly: 0
-    hire_trigger_by_mode:
-      no_investment:
-        monthly_revenue_at_least: 80000
-        earliest_month: 13
-        headcount: 1
+    headcount_by_mode:
       with_investment:
-        monthly_revenue_at_least: 50000
-        earliest_month: 18
-        headcount: 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      no_investment:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
     base_monthly_schedule_by_mode:
       with_investment:
       - months:
         - 1
-        - 24
+        - 18
         monthly: 0
+      - months:
+        - 19
+        - 24
+        monthly: 2000
       - months:
         - 25
         - 30
@@ -864,9 +934,18 @@ salaries:
       no_investment:
       - monthly_amount: 0
         earliest_month: 1
-      - monthly_amount: 5400
+      - monthly_amount: 1500
         earliest_month: 1
         monthly_revenue_at_least: 30000
+      - monthly_amount: 2500
+        earliest_month: 1
+        monthly_revenue_at_least: 60000
+      - monthly_amount: 3500
+        earliest_month: 1
+        monthly_revenue_at_least: 90000
+      - monthly_amount: 5400
+        earliest_month: 1
+        monthly_revenue_at_least: 150000
   - name: 'Sales #1'
     base_monthly: 8333
     hire_trigger_by_mode:
